@@ -10,9 +10,9 @@
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <nav>
-        <a href="/">Home</a>
-        <x-nav-link>about</x-nav-link>
-        <x-nav-link>contact</x-nav-link>
+        <x-nav-link href="/">Home</x-nav-link>
+        <x-nav-link href="/about" style="color:green">About</x-nav-link>
+        <x-nav-link href="/contact">Contact</x-nav-link>
     </nav>
 {{$slot}}
 </body>

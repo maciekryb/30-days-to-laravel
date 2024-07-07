@@ -6,11 +6,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
+    $jobs = Job::all();
     return view('home');
 });
 
 Route::get('/jobs', function () {
-    return view('jobs',  ['jobs' => Job::all()]);
+    return view('jobs',  ['jobs' =>Job::all()]);
 });
 
 Route::get('/jobs/{id}', function ($id) {
